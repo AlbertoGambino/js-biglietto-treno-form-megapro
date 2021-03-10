@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>js biglietto-treno megapro</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <div>
+          <div class="input">
+            <div class="">
+              <label for="name">Nome e Cognome</label>
+              <input id="name" type="text" name="name" value="">
+            </div>
+            <div class="">
+              <label for="distance">Km da percorrere</label>
+              <input id="distance" type="number" name="distance" value="">
+            </div>
+            <div class="">
+              <label for="eta">Fascia d'età</label>
+              <select id="eta" class="" name="eta">
+                  <option selected value="">seleziona un'opzione</option>
+                  <option value="1">minorenne</option>
+                  <option value="2">maggiorenne</option>
+                  <option value="3">over 65</option>
+              </select>
+
+            </div>
+          </div>
+          <div class="actions">
+            <input id="genera" type="button"  value="Genera">
+            <input id="annulla" type="button"  value="Annulla">
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <h2>Il tuo biglietto</h2>
+
+        <div>
+          <p>dettaglio passeggeri</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome Passeggero</th>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo Biglietto</th>
+
+              </tr>
+
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="codCp"></td>
+                <td id="costo-totale"></td>
+              </tr>
+            </tbody>
+
+          </table>
+
+
+        </div>
+
+      </div
+
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
