@@ -25,30 +25,34 @@ generaBtn.addEventListener('click', function(){
 
       var sconto = costoTotale * 0.2;
 
-      costoTotale = costoTotale - sconto;
+      costoTotale = costoTotale - sconto + ' €';
+
+      document.getElementById('offerta').innerHTML = 'Sconto minorenne'
+
     } else if (eta == 3){
       // console.log('over65', eta);
 
+      document.getElementById('offerta').innerHTML = 'Sconto over 65'
+
       var sconto = costoTotale * 0.4;
-      costoTotale = costoTotale - sconto;
+      costoTotale = costoTotale - sconto + ' €';
     }
 
-
-
-
     document.getElementById('costo-totale').innerHTML = costoTotale;
-    var cp = Math.floor(Math.random() * (100000-90000)) + 90000;
 
+    var cp = Math.floor(Math.random() * (100000-90000)) + 90000;
     document.getElementById('codCp').innerHTML = cp;
 
+    var rndCarrozza =  Math.floor(Math.random() * 20) + 1;
+    document.getElementById('carrozza').innerHTML = rndCarrozza;
 
-
+    document.getElementById('cliente').innerHTML = document.getElementById('name').value;
 
 
 
 
   } else{
-    console.log('nah');
+    console.log('compilare tutti i campi');
   }
 });
 

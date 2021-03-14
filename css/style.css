@@ -7,6 +7,76 @@
 
 .container{
   border: 1px solid black;
+  height: 100vh;
+  width: 100vw;
+}
 
+#calcolatore{
+  text-align: center;
+}
 
+#calcolatore h1, #biglietto h1{
+  margin: 20px auto;
+  color: gold;
+  background: black;
+  width: 25%;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#calcolatore .input{
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid gold;
+  padding: 45px 0;
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#genera, #annulla{
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bolder;
+  color: purple;
+
+}
+
+#biglietto{
+  text-align: center;
+  background-color: white;
+  width: 60%;
+  margin: 50px auto;
+  border-radius: 10px;
+  border: 2px solid gold;
+}
+
+#biglietto p{
+ margin-top: 50px;
+ font-size: 20px;
+ text-decoration: underline;
+}
+
+#biglietto table{
+  margin-left: 23%;
+  margin-top: 50px;
+}
+
+#biglietto table tr th,#biglietto table tr td{
+  font-size: 20px;
+  padding: 15px;
+}
+
+#videoBG{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
 }
