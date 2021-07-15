@@ -27,6 +27,7 @@ generaBtn.addEventListener('click', function(){
 
       costoTotale = costoTotale - sconto ;
 
+
       document.getElementById('offerta').innerHTML = 'Sconto minorenne'
 
     } else if (eta == 3){
@@ -36,9 +37,10 @@ generaBtn.addEventListener('click', function(){
 
       var sconto = costoTotale * 0.4;
       costoTotale = costoTotale - sconto ;
+
     }
 
-    document.getElementById('costo-totale').innerHTML = costoTotale + ' €';
+    document.getElementById('costo-totale').innerHTML = costoTotale.toFixed(2) + ' €';
 
     var cp = Math.floor(Math.random() * (100000-90000)) + 90000;
     document.getElementById('codCp').innerHTML = cp;
