@@ -14,7 +14,7 @@ generaBtn.addEventListener('click', function(){
   console.log(name, distanza, eta);
   if (name !== '' && distanza > 0 && eta !== ''){
 
-    costoTotale = costo * distanza;
+    costoTotale = costo * distanza ;
 
     // blocco else if per sconto
 
@@ -25,7 +25,7 @@ generaBtn.addEventListener('click', function(){
 
       var sconto = costoTotale * 0.2;
 
-      costoTotale = costoTotale - sconto + ' €';
+      costoTotale = costoTotale - sconto ;
 
       document.getElementById('offerta').innerHTML = 'Sconto minorenne'
 
@@ -35,10 +35,10 @@ generaBtn.addEventListener('click', function(){
       document.getElementById('offerta').innerHTML = 'Sconto over 65'
 
       var sconto = costoTotale * 0.4;
-      costoTotale = costoTotale - sconto + ' €';
+      costoTotale = costoTotale - sconto ;
     }
 
-    document.getElementById('costo-totale').innerHTML = costoTotale;
+    document.getElementById('costo-totale').innerHTML = costoTotale + ' €';
 
     var cp = Math.floor(Math.random() * (100000-90000)) + 90000;
     document.getElementById('codCp').innerHTML = cp;
